@@ -191,3 +191,65 @@ Fields:
 | WorkExperience                         | Borrower's overall work experience in years                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | WorseLateCategory                      | Displays the last longest period of days when the loan was in Principal Debt                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | XIRR                                   | XIRR (extended internal rate of return) is a methodology to calculate the net return using the loan issued date and amount, loan repayment dates and amounts and the principal balance according to the original repayment date. All overdue principal payments are written off immediately. No provisions for future losses are made & only received (not accrued or scheduled) interest payments are taken into account.                                                                                          |
+
+
+# Kaggle Personal Loan Direct Mail Cross-sell Data
+
+Source: [Kaggle](https://www.kaggle.com/datasets/dineshmk594/loan-campaign)
+Download URL: https://mikes-junk-drawer.s3.us-east-2.amazonaws.com/pl_xsell.csv
+Credit Products: Personal Loans
+
+Details:
+
+The Bank executed a campaign to cross-sell Personal Loans. As part of their Pilot Campaign, 20000 customers were sent campaigns through email, sms, and direct mail.
+They were given an offer of Personal Loan at an attractive interest rate of 12% and processing fee waived off if they respond within 1 Month.
+
+2512 customer expressed their interest and are marked as Target = 1
+
+Many Demographics and Behavioural variables provided.
+
+Fields:
+
+| Column Name              | Description                                            |
+|--------------------------|--------------------------------------------------------|
+| CUST_ID                  | Customer ID - Unique   ID                              |
+| TARGET                   | Target Field - 1:   Responder, 0: Non-Responder        |
+| AGE                      | Age of the customer   in years                         |
+| GENDER                   | Gender                                                 |
+| BALANCE                  | Average Monthly   Balance                              |
+| OCCUPATION               | Occupation                                             |
+| AGE_BKT                  | Age Bucket                                             |
+| SCR                      | Generic Marketing   Score                              |
+| HOLDING_PERIOD           | Ability to hold money   in the account (Range 0 - 31)  |
+| ACC_TYPE                 | Account Type - Saving   / Current                      |
+| ACC_OP_DATE              | Account Open Date                                      |
+| LEN_OF_RLTN_IN_MNTH      | Length of   Relationship in Months                     |
+| NO_OF_L_CR_TXNS          | No. of Credit   Transactions                           |
+| NO_OF_L_DR_TXNS          | No. of Debit   Transactions                            |
+| TOT_NO_OF_L_TXNS         | Total No. of   Transaction                             |
+| NO_OF_BR_CSH_WDL_DR_TXNS | No. of Branch Cash   Withdrawal Transactions           |
+| NO_OF_ATM_DR_TXNS        | No. of ATM Debit   Transactions                        |
+| NO_OF_NET_DR_TXNS        | No. of Net Debit   Transactions                        |
+| NO_OF_MOB_DR_TXNS        | No. of Mobile Banking   Debit Transactions             |
+| NO_OF_CHQ_DR_TXNS        | No. of Cheque Debit   Transactions                     |
+| FLG_HAS_CC               | Has Credit Card - 1:   Yes, 0: No                      |
+| AMT_ATM_DR               | Amount Withdrawn from   ATM                            |
+| AMT_BR_CSH_WDL_DR        | Amount cash withdrawn   from Branch                    |
+| AMT_CHQ_DR               | Amount debited by   Cheque Transactions                |
+| AMT_NET_DR               | Amount debited by Net   Transactions                   |
+| AMT_MOB_DR               | Amount debited by   Mobile Banking Transactions        |
+| AMT_L_DR                 | Total Amount Debited                                   |
+| FLG_HAS_ANY_CHGS         | Has any banking   charges                              |
+| AMT_OTH_BK_ATM_USG_CHGS  | Amount charged by way   of the Other Bank ATM usage    |
+| AMT_MIN_BAL_NMC_CHGS     | Amount charged by way   Minimum Balance not maintained |
+| NO_OF_IW_CHQ_BNC_TXNS    | Amount charged by way   Inward Cheque Bounce           |
+| NO_OF_OW_CHQ_BNC_TXNS    | Amount charged by way   Outward Cheque Bounce          |
+| AVG_AMT_PER_ATM_TXN      | Avg. Amt withdrawn   per ATM Transaction               |
+| AVG_AMT_PER_CSH_WDL_TXN  | Avg. Amt withdrawn   per Cash Withdrawal Transaction   |
+| AVG_AMT_PER_CHQ_TXN      | Avg. Amt debited per   Cheque Transaction              |
+| AVG_AMT_PER_NET_TXN      | Avg. Amt debited per   Net Transaction                 |
+| AVG_AMT_PER_MOB_TXN      | Avg. Amt debited per   Mobile Banking Transaction      |
+| FLG_HAS_NOMINEE          | Has Nominee - 1: Yes,   0: No                          |
+| FLG_HAS_OLD_LOAN         | Has any earlier loan   - 1: Yes, 0: No                 |
+| random                   | Random Number                                          |
+
